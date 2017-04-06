@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .intro { display: none; }
+        </style>
+    </head>
+    <body>
+        <h5>Image will fade in on click</h5>
+        <img class="intro" src="image/hawaii_temple.jpg" />
+        <button id="button">Click</button>
+
+        <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function() {    // action starts as document gets loaded
+                $("#button").click(function() {
+                    $(".intro").fadeIn(500)
+                })
+            })
+        </script>
+
+    </body>
+</html>
