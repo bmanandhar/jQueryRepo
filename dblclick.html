@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #intro { display: none; }
+      #btn { position: fixed; }
+    </style>
+  </head>
+  <body>
+    <h2>This will slide-toggle on double-click</h2>
+    <button id="btn">Click</button>
+    <img id="intro" src="image/orchid.jpg" />
+
+    <script src="js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").dblclick(function() {
+          $("#intro").slideToggle()
+        })
+      })
+    </script>
+
+  </body>
+</html>
