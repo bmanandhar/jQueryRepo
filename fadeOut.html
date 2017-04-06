@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head><style>#btn {background-color: yellow}</style></head>
+    <body>
+        <h5>Image will fade out on click</h5>
+        <button id="btn">Click</button>
+        <img id="intro" src="image/hawaii_temple.jpg" />
+
+        <script src="js/jquery.js"></script>
+        <script>
+            // When document gets loaded, do this
+            $(document).ready(function() {
+                // When the element with id="btn" is clicked, do this
+                $("#btn").click(function() {
+                    // Fade out element with class="intro" in 1000 ms
+                    $("#intro").fadeOut(1000)
+                })
+            })
+        </script>
+
+    </body>
+</html>
