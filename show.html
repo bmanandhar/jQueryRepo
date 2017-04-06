@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>#showThis {display: none}</style>
+    </head>
+    <body>
+        <h5>something will show when you click button</h5>
+        <button id="button">Click</button>
+        <h1 id="showThis"> Showed on click</h1>
+
+<script src="js/jquery.js"></script>
+<script>
+    $(document).ready(function() {           // action starts as document gets loaded
+        $("#button").click(function() {
+            $("#showThis").show()
+        })
+    })
+</script>
+
+    </body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+
+    </body>
+
+</html> -->
