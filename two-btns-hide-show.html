@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #show { background-color: green; }
+      #hide { background-color: red; }
+      #intro { display: none; }
+    </style>
+  </head>
+  <body>
+    <button id="show">Click</button>
+    <button id="hide">Click</button>
+    <h2>This will toggle on click</h2>
+    <img id="intro" src="image/hawaii_temple.jpg" />
+
+    <script src="js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#show").click(function() {
+          $("#intro").show()
+        })
+        $("#hide").click(function() {
+          $("#intro").hide()
+        })
+      })
+    </script>
+
+  </body>
+</html>
