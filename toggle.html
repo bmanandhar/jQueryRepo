@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button id="button">Click</button>
+        <h2>This will toggle on click</h2>
+        <img class="intro" src="image/hawaii_temple.jpg" />
+
+        <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function() {           // action starts as document gets loaded
+                $("#button").click(function() {
+                    $(".intro").toggle(1000)
+                })
+            })
+        </script>
+    </body>
+</html>
