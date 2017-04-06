@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #flower { display: none; }
+      #btn { position: fixed; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <h2>Fade-toggle on left mouse-down</h2>
+    <button id="btn">Click</button>
+    <img id="flower" src="image/orchid.jpg" />
+
+    <script src="js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").mousedown(function() {
+          $("#flower").fadeToggle(1000)
+        })
+      })
+    </script>
+
+  </body>
+</html>
