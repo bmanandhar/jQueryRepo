@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #intro { display: none; }
+      #btn { background-color: yellow; }
+    </style>
+  </head>
+  <body>
+    <h2>This will slide-toggle on click</h2>
+    <button id="btn">Click</button>
+    <img id="intro" src="image/hawaii_temple.jpg" />
+
+    <script src="js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function() {
+          $("#intro").slideToggle()
+        })
+      })
+    </script>
+
+  </body>
+</html>
