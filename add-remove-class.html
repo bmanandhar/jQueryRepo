@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .intro { background: royalblue; }
+        </style>
+    </head>
+    <body>
+        <h1>This is addClass</h1>
+        <h2 class="intro">This is removeClass</h2>
+        <button id="btn">Click to Add/Remove Class</button>
+
+        <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    $("h1").addClass("intro");
+                    $("h2").removeClass("intro");
+                })
+            })
+        </script>
+
+  </body>
+</html>
