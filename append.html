@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <ol id="newList">
+            <li>Apple</li>
+            <li>Peach</li>
+            <li>Grapes</li>
+        </ol>
+        <button id="btn">Click to Append</button>
+
+            <script src="js/jquery.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#btn").click(function() {
+                        $("#newList").append("<li>Appricot</li>")
+                  })
+            })
+        </script>
+
+  </body>
+</html>
