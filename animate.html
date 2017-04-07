@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #btn { background-color: yellow; }
+      div { width: 100px; height: 100px; background: purple; }
+    </style>
+  </head>
+  <body>
+    <h2>Click-Animate</h2>
+    <button id="btn">Click</button><br /><br />
+    <div id="divBox"></div>
+
+    <script src="js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function() {
+          $("#divBox").animate({
+          width: '400px', height: '400px'
+          })
+        })
+      })
+    </script>
+
+  </body>
+</html>
