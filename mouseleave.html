@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+     #rose { display: none; }
+    </style>
+  </head>
+  <body>
+    <h2>Leave mouse to hide orchid and show a rose</h2>
+    <img id="orchid" src="image/orchid.jpg" />
+    <img id="rose" src="image/rose.jpg" />
+    <script src="js/jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#orchid").mouseleave(function() {
+          $("#orchid").hide();
+          $("#rose").show();
+        })
+      })
+    </script>
+
+  </body>
+</html>
